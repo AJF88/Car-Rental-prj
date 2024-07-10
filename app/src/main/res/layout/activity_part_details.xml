@@ -1,0 +1,56 @@
+<!-- res/layout/activity_parts_details.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/part_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/part1" />
+
+    <TextView
+        android:id="@+id/part_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/part_image"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:text="Part Name"
+        android:textColor="#000"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/part_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/part_name"
+        android:padding="16dp"
+        android:text="Part Description"
+        android:textSize="16sp"
+        android:textColor="#333" />
+
+    <Button
+        android:id="@+id/buy_part_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/part_description"
+        android:text="Buy Part"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/whatsapp_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buy_part_button"
+        android:text="Contact via WhatsApp"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>
