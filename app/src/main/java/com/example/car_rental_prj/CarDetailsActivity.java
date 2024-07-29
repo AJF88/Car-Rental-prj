@@ -82,11 +82,12 @@ public class CarDetailsActivity extends AppCompatActivity {
         whatsappButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String phoneNumber = "";
+                String phoneNumber = "03315937444";
                 openWhatsApp(phoneNumber);
             }
         });
     }
+
 
     private void openWhatsApp(String phoneNumber) {
         Uri uri = Uri.parse("https://wa.me/" + phoneNumber);

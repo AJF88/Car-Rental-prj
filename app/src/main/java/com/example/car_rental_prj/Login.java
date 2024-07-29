@@ -97,7 +97,7 @@ public class Login extends AppCompatActivity {
         if (!validateUserName() | !validatePassword()) {
             return;
         } else {
-            Toast.makeText(this, "pressesd", Toast.LENGTH_SHORT).show();
+
             ifUser();
         }
     }
